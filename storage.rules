@@ -1,0 +1,10 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /cvs/{fileName} {
+      // CV yüklemeye herkes izin ver ama okumaya sadece admin
+      allow create: if request.resource.size < 10 * 1024 * 1024;
+      allow read: if request.auth != null;
+    }
+  }
+} 

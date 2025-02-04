@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "isealim"
+location: "us-west4"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "isealim-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
