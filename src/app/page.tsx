@@ -9,7 +9,7 @@ export default function Home() {
             Alya-Doruk Ortaklık  İş Başvuru Formu
           </h1>
           <p className="mt-3 text-xl text-gray-500 sm:mt-4">
-            Fotogrametrik ve Kaplama Uygulamaları Başvuru Formu
+             Mimari Proje Sayısallaştırma Başvuru Formu
           </p>
         </div>
         <div className="mt-12">
